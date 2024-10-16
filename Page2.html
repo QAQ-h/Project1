@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #eee;
+				margin: 0;
+				height: 100vh;
+			}
+/* 			*{
+				border: 1px solid black;
+			} */
+			.flex{
+				display: flex;
+			}
+			.main{
+				flex: 1;
+			}
+			.defaultcolor{
+				background-color: white;
+				box-shadow: 2px 2px 5px #121212;
+			}
+			.column{
+				flex-direction: column;
+			}
+			.row{
+				flex-direction: row;
+			}
+			.mg8{
+				margin: 8px;
+			}
+			.mgr8{
+				margin-right: 8px;
+			}
+			.mgt8{
+				margin-top: 8px;
+			}
+			.navbar{
+				padding: 10px;
+				border-bottom: 1px solid grey;
+				color: #666666;
+			}
+			/* 移动端 */
+			@media(max-width<600)
+			{
+				
+			}
+		</style>
+	</head>
+	<body class="flex">
+		<!-- 侧边栏 -->
+		<div class="defaultcolor" style="width: 200px; z-index: 2;">
+			<!-- 头像及昵称 -->
+			<div class="flex row" style="height: 50px; padding: 10px; 
+			align-items: center; justify-content: center; border-bottom: 1px solid #999999;">
+				<img src="imgs/Aris.png" style="width: 50px; height: 50px;" class="mgr8"/>
+				<div>爱丽丝</div>
+			</div>
+			<!-- 导航栏 -->
+			<div class="main">
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+				<div class="navbar">只是一个导航栏罢了</div>
+								
+			</div>
+		</div>
+		
+		<!-- 主区域 -->
+		<div class="main flex column">
+			<!-- 头部 -->
+			<div style="height: 60px; z-index: 1;" class="defaultcolor"></div>
+			
+			<!-- 内容区 -->
+			<div class="main flex" style="overflow: auto;">
+				<!-- 左半部分 -->
+				<div style="flex: 3;" class="flex column mg8">
+					<!-- 上半 -->
+					<div style="height: 200px;" class="flex row">
+						<!-- 块 -->
+						<div class="defaultcolor main mgr8"></div>
+						<div class="defaultcolor main mgr8"></div>
+						<div class="defaultcolor main mgr8"></div>
+						<div class="defaultcolor main"></div>
+					</div>
+					<!-- 下半 -->
+					<div class="flex main column">
+						<!-- 列表项 -->
+						<div class="defaultcolor" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+					</div>
+				</div>
+				<!-- 右半部分 -->
+				<div style="flex: 1;" class="column mgr8 mgt8">
+					<!-- 第一部分 -->
+					<div class="defaultcolor" style="height: 150px;">
+						
+					</div>
+					<!-- 第二部分 -->
+					<div class="defaultcolor mgt8" style="height:300px;">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

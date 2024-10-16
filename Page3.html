@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #eeeeee;
+				margin: 0px;;
+				height: 100vh;
+			}
+/* 			*{
+				border: 1px solid black;
+			} */
+			.defaultcolor{
+				background-color: white;
+				box-shadow: 2px 2px 5px #121212;
+			}
+			.flex{
+				display: flex;
+			}
+			.main{
+				flex: 1;
+			}
+			.row{
+				flex-direction: row;
+			}
+			.column{
+				flex-direction: column;
+			}
+			.mgr8{
+				margin-right: 8px;
+			}
+			.mg8{
+				margin: 8px;
+			}
+			.mgt8{
+				margin-top: 8px;
+			}
+			.value{
+				overflow: auto;
+				
+			}
+			.value::-webkit-scrollbar{
+				display: none;
+			}
+		</style>
+	</head>
+	<body class="flex column">
+		<!-- 导航栏 -->
+		<div class="defaultcolor" style="height: 50px;">
+			
+		</div>
+		
+		<!-- 主区域 -->
+		<div class="flex main" style="margin: 25px 300px;  overflow: auto;">
+			<!-- 左半部分:"内容" -->
+			<div class="flex column value" style="flex: 2.5;">
+				<!-- 上半部分:"计划" -->
+				<div class="flex row mg8" style="height: 150px; flex-shrink: 0;">
+					<div class="mgr8 main defaultcolor"></div>
+					<div class="mgr8 main defaultcolor"></div>
+					<div class="main defaultcolor"></div>
+				</div>
+				<!-- 下半部分:"推荐" -->
+				<div class="flex column main mg8">
+					<!-- 导航栏 -->
+					<div class="defaultcolor flex" style="height: 50px;"></div>
+					<!-- 内容 -->
+					<div class="flex main column mgt8">
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+						<div class="defaultcolor mgt8" style="height: 150px;"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 右半部分:"日期" -->
+			<div class="flex column" style="flex: 1;">
+				<!-- 日期样式 -->
+				<div class="defaultcolor" style="height: 400px;"></div>
+			</div>
+		</div>
+	</body>
+</html>
